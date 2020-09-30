@@ -6,6 +6,6 @@ class Carta
     end
 end
 
-carta1 = Carta.new("c", "hola")
+carta1 = Carta.new(["c", "d", "e", "t"], "hola")
 
 puts carta1.pinta 
