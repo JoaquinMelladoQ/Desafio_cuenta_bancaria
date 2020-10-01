@@ -7,3 +7,7 @@ class CuentaBancaria
         @vip = vip
     end
 end
+
+def numero_de_cuenta
+
+end
