@@ -1,6 +1,6 @@
 class CuentaBancaria
     attr_accessor :nombre_usuario, 
-    :numero_de_cuenta
+    :numero_de_cuenta, :vip
 
     def initialize( nombre_usuario, numero_de_cuenta, vip = 0 )
         @nombre_usuario = nombre_usuario
