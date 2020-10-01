@@ -13,7 +13,7 @@ end
 
 deck = []
 5.times do
-    deck.push(Carta.new(["c", "d", "e", "t"], Random.rand(1...13)))
+    deck.push(Carta.new(["c", "d", "e", "t"].map!(&:upcase), Random.rand(1...13)))
 end
 
 puts deck[0].pinta
