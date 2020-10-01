@@ -8,4 +8,5 @@ end
 
 carta1 = Carta.new(["c", "d", "e", "t"], Random.rand(1...13))
 
-puts carta1.numero
+puts carta1.pinta
+
