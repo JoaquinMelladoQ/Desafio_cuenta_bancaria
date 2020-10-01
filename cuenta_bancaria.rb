@@ -1,13 +1,20 @@
 class CuentaBancaria
-    attr_accessor :nombre_de_usuario
+    attr_accessor :nombre_usuario, 
+    :numero_de_cuenta
+
     def initialize( nombre_usuario, numero_de_cuenta, vip = 0 )
-        @nombre_usuario = nombre_de_usuario
+        @nombre_usuario = nombre_usuario
         @numero_de_cuenta = numero_de_cuenta
-        @numero_de_cuenta.digits.count !== 8 ? raise RangeError : ''
+
+        numero_de_cuenta.digits.count != 8 ? (raise RangeError) : ""
         @vip = vip
     end
 end
 
-def numero_de_cuenta
+cuenta1 = CuentaBancaria.new("Paula", 88475784)
 
-end
+puts cuenta1.numero_de_cuenta
+
+# def numero_de_cuenta
+
+# end
