@@ -1,20 +1,20 @@
-class Carta
-    attr_accessor :pinta, 
-    :numero
-    def initialize( pinta, numero )
-        @pinta = pinta.sample
-        @numero = numero
+class Card
+    attr_accessor :suits, 
+    :number
+    def initialize( suits, number )
+        @suits = suits.sample
+        @number = number
     end
 end
 
-# carta1 = Carta.new(["c", "d", "e", "t"], Random.rand(1...13))
+# card_one = Card.new(["c", "d", "e", "t"], Random.rand(1...13))
 
-# puts carta1.pinta
-
+# puts card_one.suits
+# Suits : c = clubs d = diamonds h = hearts s = spades
 deck = []
 5.times do
-    deck.push(Carta.new(["c", "d", "e", "t"].map!(&:upcase), Random.rand(1...13)))
+    deck.push(Card.new(["c", "d", "h", "s"].map!(&:upcase), Random.rand(1...13)))
 end
 
-puts deck[0].pinta
-puts deck[1].numero
+puts deck[0].suits
+puts deck[1].number
