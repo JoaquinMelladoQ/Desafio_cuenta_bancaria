@@ -11,10 +11,16 @@ class BankAccount
     end
 end
 
-account_one = BankAccount.new("Paula", 88475784)
+account_one = BankAccount.new("Paula", 88475784, 0)
 
-puts account_one.number_account
+# puts account_one.number_account
 
-def number_account()
-
+def number_account( account )
+    account.vip == 1 ? (vip_class = "1-#{account.number_account}")
+                     : (vip_class = "0-#{account.number_account}")
+                     return vip_class.concat("\tPaula")
 end
+
+acc = number_account( account_one )
+
+puts acc
