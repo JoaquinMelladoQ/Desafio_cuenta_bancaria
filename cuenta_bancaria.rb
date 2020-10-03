@@ -5,9 +5,9 @@ class BankAccount
     def initialize( user_name, number_account, vip = 0 )
         @user_name = user_name
         @number_account = number_account
+        @vip = vip
 
         number_account.digits.count != 8 ? (raise RangeError) : ""
-        @vip = vip
     end
 end
 
