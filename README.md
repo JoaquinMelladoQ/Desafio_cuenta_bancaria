@@ -6,7 +6,7 @@
 está indicada por una sola letra. Puede ser Corazón: 'C', Diamante: 'D', Espada: 'E' o Trébol:
 'T'(2 puntos)
 ### Tip 1: Para escoger un número al azar ocupar Random.rand(rango_inferior,
-rango_superior)
+### rango_superior)
 ### Tip 2: Agregar las pintas posibles en un arreglo y ocupar el método .sample
 + Probar la clase creando un arreglo con 5 cartas.(1punto)
 
